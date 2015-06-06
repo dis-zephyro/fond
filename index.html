@@ -10,6 +10,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="js/vendor/slick/slick.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
         <link rel="stylesheet/less" href="less/main.less">
         <script src="js/vendor/less.min.js"></script>
@@ -19,49 +20,305 @@
     <body>
         <header class="header">
             <div class="container">
-                <div class="header-logo ir"></div>
-                <div class="header-contact">
-                    <div class="phone-title"></div>
-                    <div class="phone"></div>
-                    <a class="btn btn-header popup-form" href="#popup-form">заказ обратного звонка</a>
-                </div>
-                <div class="header-title"></div>
-                <ul class="benefit clerfix">
-                    <li class="item1"></li>
-                    <li class="item2"></li>
-                    <li class="item3"></li>
-                    <li class="item4"></li>
-                </ul>
+                <div class="header__logo ir"></div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#">Что такое ODA?</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Соревнования</a></li>
+
+                    </ul>
+                </nav>
             </div>
         </header>
-        <section class="">
-            <div class="container"></div>
+        <section class="slider">
+            <div class="container">
+                <ul class="slide-content">
+                    <li>
+                        <img class="img-responsive" src="images/slide01.jpg" alt="">
+                        <div class="slide__text">
+                            <div class="slide__title">благотворительность</div>
+                            <p>Основной целью Фонда является оказание
+                                материальной и иной помощи инвалидам
+                                и их семьям, детям-инвалидам и их семьям</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="img-responsive" src="images/slide01.jpg" alt="">
+                        <div class="slide__text">
+                            <div class="slide__title">благотворительность</div>
+                            <p>Основной целью Фонда является оказание
+                                материальной и иной помощи инвалидам
+                                и их семьям, детям-инвалидам и их семьям</p>
+                        </div>
+                    </li>
+                </ul>
+                <span class="nav slider-nav-prev"></span>
+                <span class="nav slider-nav-next"></span>
+            </div>
         </section>
-        <section class="">
-            <div class="container"></div>
+        <section class="direction">
+            <div class="container">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <img class="img-responsive" src="images/direction__img1.jpg" alt="Оказание материальной и иной помощи инвалидам и их семьям">
+                            <div class="direction__text">Оказание материальной и иной помощи инвалидам и их семьям</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="img-responsive" src="images/direction__img2.jpg" alt="Проведение благотворительных аукционов">
+                            <div class="direction__text">Проведение благотворительных аукционов</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="img-responsive" src="images/direction__img3.jpg" alt="Проведение, культурных, спортивных и иных массовых мероприятий">
+                            <div class="direction__text">Проведение, культурных, спортивных и иных массовых мероприятий</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="">
-            <div class="container"></div>
+        <section class="green-block">
+            <div class="container">
+                <a class="btn btn-yellow" href="#">сделать пожертвование</a>
+            </div>
         </section>
-        <section class="">
-            <div class="container"></div>
+        <section class="result-block">
+            <div class="container">
+                <h2 class="title__large">Результаты <span class="text-green">Вашей помощи</span></h2>
+                <ul class="clearfix">
+                    <li class="item1">
+                        <div class="result__icon"></div>
+                        <span>Участие<br/>в соревнованиях</span>
+                    </li>
+                    <li class="item2">
+                        <div class="result__icon"></div>
+                        <span>Получение шанса<br/>жить полной жизнью</span>
+                    </li>
+                    <li class="item3">
+                        <div class="result__icon"></div>
+                        <span>Победы<br/>на Паралимпиаде!</span>
+                    </li>
+                </ul>
+                <div class="order-box">
+                    <div class="order-text">
+                        <span>Организатором соревнований местного значения,
+                        проведением международных соревнований,
+                        а также тренировок для спортсменов является
+                        наш Фонд O.D.A. Проведением Паралимпиады
+                        занимается Олимпийский комитет.</span>
+                    </div>
+                    <a class="btn btn-green" href="#">Я хочу сделать пожертвование!</a>
+                </div>
+            </div>
         </section>
-        <section class="">
-            <div class="container"></div>
+        <section class="events-block">
+            <div class="container">
+                <h2 class="title__large">Мероприятия</h2>
+                <div class="events__inner">
+                    <ul class="event-list clearfix">
+                        <li>
+                            <a href="#" class="event">
+                                <img class="img-responsive" src="images/event__img1.jpg" alt="">
+                                <div class="event__text">
+                                    <span class="event__date">20.04.2015</span>
+                                    <h4 class="event__name">Соревнования в г. Москва</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="event">
+                                <img class="img-responsive" src="images/event__img2.jpg" alt="">
+                                <div class="event__text">
+                                    <span class="event__date">20.04.2015</span>
+                                    <h4 class="event__name">Соревнования в г. Санкт-Петербург</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="event">
+                                <img class="img-responsive" src="images/event__img3.jpg" alt="">
+                                <div class="event__text">
+                                    <span class="event__date">20.04.2015</span>
+                                    <h4 class="event__name">Тренировочный матч</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="event">
+                                <img class="img-responsive" src="images/event__img4.jpg" alt="">
+                                <div class="event__text">
+                                    <span class="event__date">20.04.2015</span>
+                                    <h4 class="event__name">Паралимпиада в Сочи!</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="event">
+                                <img class="img-responsive" src="images/event__img1.jpg" alt="">
+                                <div class="event__text">
+                                    <span class="event__date">20.04.2015</span>
+                                    <h4 class="event__name">Соревнования в г. Москва</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="event">
+                                <img class="img-responsive" src="images/event__img2.jpg" alt="">
+                                <div class="event__text">
+                                    <span class="event__date">20.04.2015</span>
+                                    <h4 class="event__name">Соревнования в г. Санкт-Петербург</h4>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="nav event-nav-prev"></span>
+                    <span class="nav event-nav-next"></span>
+                </div>
+            </div>
         </section>
-        <section class="">
-            <div class="container"></div>
+        <section class="application">
+            <div class="container">
+                <h2 class="title__large">Заявка</h2>
+                <div class="application__inner clearfix">
+                    <div class="application__text">
+                        <div class="application__title">Хотите принять участие в наших мероприятиях?</div>
+                        <p>Мы приглашаем людей с ограниченными возможностями,
+                            желающих попробовать свои силы и <strong>начать интересную
+                                и насыщенную жизнь!</strong></p>
+                        <p>Также мы будем рады видеть на наших мероприятиях
+                            журналистов, <strong>спонсоров и всех неравнодушных зрителей!</strong></p>
+                    </div>
+                    <div class="application__form">
+                        <div class="form">
+                            <div class="form-group">
+                                <label>Ф.И.О.</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-row clearfix">
+                                <div class="form-col">
+                                    <label>Email / Телефон</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-col">
+                                    <label>Кто Вы?</label>
+                                    <select class="form-control">
+                                        <option selected value="Спонсор">Спонсор</option>
+                                        <option value="Участник">Участник</option>
+                                        <option value="Зритель">Зритель</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Ваш комментарий</label>
+                                <textarea type="textarea" class="form-control"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-red">отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
-        <section class="">
-            <div class="container"></div>
+        <section class="question-block">
+            <div class="container">
+                <h2 class="title__large">Вопросы и ответы</h2>
+                <div class="quest-box">
+                    <div class="quest"><span class="quest-item">Кто является организатором соревнований?</span></div>
+                    <div class="answer">Организатором соревнований местного значения, а также тренировок для спортсменов является наш Фонд O.D.A. Проведением международных соревнований
+                        и Паралимпиады занимается Олимпийский комитет.</div>
+
+                    <div class="quest"><span class="quest-item">Что необходимо, чтобы принять участие в соревнованиях в качестве спортсмена?</span></div>
+                    <div class="answer">Организатором соревнований местного значения, а также тренировок для спортсменов является наш Фонд O.D.A. Проведением международных соревнований
+                        и Паралимпиады занимается Олимпийский комитет.</div>
+
+                    <div class="quest"><span class="quest-item">Как проходят соревнования и как спортсмены добираются до места их проведения?</span></div>
+                    <div class="answer">Организатором соревнований местного значения, а также тренировок для спортсменов является наш Фонд O.D.A. Проведением международных соревнований
+                        и Паралимпиады занимается Олимпийский комитет.</div>
+
+                    <div class="quest"><span class="quest-item">Сколько стоит участие в соревнованиях?</span></div>
+                    <div class="answer">Организатором соревнований местного значения, а также тренировок для спортсменов является наш Фонд O.D.A. Проведением международных соревнований
+                        и Паралимпиады занимается Олимпийский комитет.</div>
+
+                    <div class="quest"><span class="quest-item">Как можно пожертвовать вам большую сумму денег?</span></div>
+                    <div class="answer">Организатором соревнований местного значения, а также тренировок для спортсменов является наш Фонд O.D.A. Проведением международных соревнований
+                        и Паралимпиады занимается Олимпийский комитет.</div>
+                </div>
+            </div>
+        </section>
+        <section class="success-block">
+            <div class="container">
+                <h2 class="title__large">Истории успеха</h2>
+                <div class="video__inner">
+                    <ul class="video__slider clearfix">
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/YObuXw9rQF0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/raAwPpLNlbk" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/YObuXw9rQF0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/raAwPpLNlbk" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                    </ul>
+                    <span class="nav video-nav-prev"></span>
+                    <span class="nav video-nav-next"></span>
+                </div>
+            </div>
         </section>
         <footer class="footer">
-
+            <div class="container">
+                <div class="footer__logo">
+                    <span class="item1">БЛАГОТВАРИТЕЛЬНЫЙ</span>
+                    <span class="item2">ФОНД ODA</span>
+                    <span class="item3">Все права зашищены 2015 ©</span>
+                </div>
+                <nav class="footer__nav">
+                    <div class="footer__title">Навигация:</div>
+                    <ul class="clearfix">
+                        <li><a href="#">Что такое ODA?</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Соревнования</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__social">
+                    <div class="footer__title">Мы в соцсетях:</div>
+                    <ul class="clearfix">
+                        <li class="vk"><a href="#"></a></li>
+                        <li class="ok"><a href="#"></a></li>
+                        <li class="fb"><a href="#"></a></li>
+                        <li class="youtube"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
         </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/vendor/slick/slick.min.js"></script>
         <script src="js/main.js"></script>
 
     </body>

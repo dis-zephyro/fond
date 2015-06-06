@@ -482,3 +482,10 @@ fieldset {
 textarea {
   resize: vertical;
 }
+
+
+input[type="text"]::-ms-clear {
+	display: none;
+	width: 0;
+	height: 0;
+}
