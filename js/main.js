@@ -145,10 +145,22 @@ jQuery("#donation__slider").slider({
 
 
 jQuery("input#donation__sum").change(function(){
-
-
     jQuery("input#donation__sum").val(value2);
     jQuery("#donation__slider").slider("values",1,value2);
 });
 
 
+
+$(function () {
+    $('.select-style').ikSelect({
+        autoWidth: false,
+        ddFullWidth: false,
+        dynamicWidth: false,
+        equalWidths: true,
+        extractLink: false,
+        customClass: '',
+        linkCustomClass: '',
+        ddCustomClass: '',
+        filter: false
+    });
+});
