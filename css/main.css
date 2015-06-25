@@ -1481,6 +1481,7 @@ nav ul {
   padding: 5px 15px;
 }
 .ik_select_dropdown .ik_select_list_inner ul li:hover {
+  color: #fff;
   background: #999999;
 }
 .select-main-dd {
