@@ -1649,7 +1649,6 @@ nav ul {
 
 	&.ik_select_link_focus {
 		border-color: #999999;
-		background-position: 96% -80px;
 	}
 }
 
@@ -1660,24 +1659,27 @@ nav ul {
 
 		ul {
 			list-style: none;
-			background: #fff;
+			background: #fff url("../img/select-arrow.png") 96% -80px no-repeat;
 			margin: -5px 0 0 0;
 			padding: 5px 0  0;
 			border: 2px solid #999999;
-			border-top: none;
 
 			li {
 				color: #1a1a18;
 				font-size: 14px;
-				background: #fff;
 				line-height: 20px;
 				cursor: pointer;
 				padding: 5px 15px;
 
 				&:hover {
-					background: #999999;
+					background: #999999 url("../img/select-arrow.png") 96% -80px no-repeat;
 				}
 			}
 		}
 	}
+}
+
+.select-main-dd {
+	top: 1px;
+
 }

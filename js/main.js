@@ -158,9 +158,9 @@ $(function () {
         dynamicWidth: false,
         equalWidths: true,
         extractLink: false,
-        customClass: '',
         linkCustomClass: '',
         ddCustomClass: '',
-        filter: false
+        filter: false,
+        customClass: 'select-main'
     });
 });
