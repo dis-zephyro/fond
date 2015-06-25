@@ -864,6 +864,9 @@ body {
   color: #3d7584;
   text-decoration: underline;
 }
+.donation .donation__eula a:hover {
+  text-decoration: none;
+}
 .donation .checkbox {
   display: inline-block;
 }
@@ -910,7 +913,6 @@ body {
   cursor: pointer;
   position: relative;
   display: inline-block;
-  border: 1px solid #ccc;
 }
 .donation .payment label:before {
   content: "";
