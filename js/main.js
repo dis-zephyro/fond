@@ -2,7 +2,8 @@
 
 $(".quest-box").accordion({
     header:'.quest',
-    collapsible: true
+    fillSpace:true,
+    animated:"bounceslide"
 });
 
 
@@ -22,6 +23,7 @@ $(window).load(function () {
 $('.slide-content').slick({
     arrows: false,
     autoplay: false,
+    lazyLoad: 'ondemand',
     slidesToShow: 1,
     slidesToScroll: 1
 });

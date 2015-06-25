@@ -118,12 +118,13 @@ body {
 	ul {
 		margin: 0;
 		padding: 0;
+		max-height: 400px;
 		overflow: hidden;
 		list-style: none;
 	}
 
 	li {
-		width: 100%;
+		float: left;
 		display: block;
 		overflow: hidden;
 		position: relative;
@@ -719,6 +720,10 @@ body {
 	color: #3d7584;
 	font-size: 14px;
 	text-decoration: underline;
+
+	&:hover {
+		color: #000;
+	}
 }
 
 .gallery {
@@ -1312,6 +1317,7 @@ body {
 
 			&:hover {
 				color: #000;
+				border-bottom: 1px solid #000;
 			}
 		}
 	}

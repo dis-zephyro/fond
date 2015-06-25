@@ -155,11 +155,12 @@ body {
 .slider ul {
   margin: 0;
   padding: 0;
+  max-height: 400px;
   overflow: hidden;
   list-style: none;
 }
 .slider li {
-  width: 100%;
+  float: left;
   display: block;
   overflow: hidden;
   position: relative;
@@ -658,6 +659,9 @@ body {
   font-size: 14px;
   text-decoration: underline;
 }
+.news__more:hover {
+  color: #000;
+}
 .gallery {
   padding-top: 7px;
 }
@@ -1152,6 +1156,7 @@ body {
 }
 .footer .footer__nav a:hover {
   color: #000;
+  border-bottom: 1px solid #000;
 }
 .footer .footer__social {
   top: 40px;
